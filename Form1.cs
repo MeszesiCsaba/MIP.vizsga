@@ -83,7 +83,7 @@ namespace MIPVizsga
 
         private void BuildProjectsTab(TabPage tab)
         {
-            Panel editor = new Panel { Dock = DockStyle.Top, Height = 210, Padding = new Padding(10) };
+            Panel editor = new Panel { Dock = DockStyle.Top, Height = 385, Padding = new Padding(10) };
 
             Label nameLabel = new Label { Text = "Projekt neve", AutoSize = true, Location = new Point(10, 15) };
             projectNameInput = new TextBox { Location = new Point(115, 10), Width = 200 };
@@ -126,15 +126,15 @@ namespace MIPVizsga
             assignmentGrid = CreateGrid();
             assignmentGrid.Dock = DockStyle.None;
             assignmentGrid.Location = new Point(10, 85);
-            assignmentGrid.Size = new Size(1010, 70);
+            assignmentGrid.Size = new Size(1010, 240);
             assignmentGrid.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             assignmentGrid.Columns.Add("Developer", "Fejlesztő");
             assignmentGrid.Columns.Add("DeveloperHours", "Óraszám");
 
-            costLabel = new Label { AutoSize = true, Location = new Point(10, 165), Font = new Font(Font, FontStyle.Bold) };
-            differenceLabel = new Label { AutoSize = true, Location = new Point(230, 165) };
-            statusLabel = new Label { AutoSize = true, Location = new Point(470, 165), Width = 450 };
-            acceptButton = new Button { Text = "Accept project", AutoSize = true, Location = new Point(920, 158) };
+            costLabel = new Label { AutoSize = true, Location = new Point(10, 340), Font = new Font(Font, FontStyle.Bold) };
+            differenceLabel = new Label { AutoSize = true, Location = new Point(230, 340) };
+            statusLabel = new Label { AutoSize = true, Location = new Point(470, 340), Width = 450 };
+            acceptButton = new Button { Text = "Accept project", AutoSize = true, Location = new Point(920, 333) };
             acceptButton.Click += AcceptProjectClicked;
 
             editor.Controls.AddRange(new Control[]
