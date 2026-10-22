@@ -1,0 +1,1 @@
+Az alkalmazás beadandó fájljai ebbe a mappába kerülnek: agency.db és trace.txt. Ha korábban a repository gyökerében készültek, az alkalmazás következő indításakor átmásolja őket ide.
